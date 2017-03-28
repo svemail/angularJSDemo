@@ -1,0 +1,2 @@
+git status - status of changes done in local
+git pull - get a copy of all server files
