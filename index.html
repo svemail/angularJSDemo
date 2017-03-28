@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Dashboard Online</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link href="app/main.css" rel="stylesheet" type="text/css" media="all" />
+
+    <body ng-app="boardApp" ng-cloak>
+        <div>
+            <ui-view></ui-view>
+        </div>
+        <footer class="footer text-center">
+            <strong>Dashboard App</strong> <span>©Copyright 2016 by Dashboard App. All Rights Reserved.</span>
+            <ul class="list-inline hidden-sm hidden-xs pull-right">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </footer>
+        <div class="process" ng-show="showProcessing">
+            <img src="/images/ajaxLoader.gif" width="40" height="40" margin-left="0px" alt="Loading">
+        </div>
+    </body>
+   
+    <!-- Libs -->
+   
+    <script src="app/lib/js/angular.js"></script>
+    <script src="app/lib/js/angular-ui-router.min.js"></script>
+    <script src="app/lib/js/angular-local-storage.min.js"></script>   
+    <script src="app/lib/js/angular-messages.min.js"></script>
+    <script src="app/lib/js/ui-bootstrap-tpls-0.14.3.min.js"></script>
+    
+    <script src="app/app.js"></script>
+    <!-- Constants  -->
+    <script src="app/constants/appConfiguration.js"></script>
+    <!-- Factory  -->
+    <script src="app/factories/ajaxFactory.js"></script>
+    <script src="app/factories/authInterceptorService.js"></script>
+    <!-- Controllers  -->
+    <script src="app/controllers/mainCtrl.js"></script>   
+    <!-- -->
+    <script src="app/templates/directives/directives.js"></script>
+
+</html>

@@ -1,0 +1,64 @@
+<div class="wrapper" style="margin-top: 67px;">
+    <!-- Header-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="javascript:void(0)" ng-click="createProject()">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i> <span>Create</span>
+                </a>
+            </div>
+            <div class="left-nav-toggle">
+                <a href="javascript:void(0)" ng-click="showMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="profil-link">
+                        <a href="javascript:void(0)">
+                            <span class="profile-address padding-4">{{loginId}}</span>
+                            <span class="padding-4"><i class="fa fa-sign-out fa-2" aria-hidden="true" title="Logout" ui-sref="signIn"></i><span>
+                            <span class="padding-4"><i class="fa fa-user-circle fa-2" aria-hidden="true"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+      <!-- End of Header-->
+    <!-- <aside class="navigation-panel" ng-if="isShowMenu">
+        <nav style="height:94%">
+            <ul class="nav dash-nav">
+                <li style="padding: 5px;">
+                    <div>
+                        <input type="text" placeholder="Search" class="form-control" autocomplete="off" required>
+                    </div>
+                </li>
+                <li ng-repeat="(key, value) in dataSource" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" jqyoui-draggable jqyoui-draggable="{animate:true}">
+                    <a href="javascript:void(0)" ng-model="value">{{key}}</a>
+                </li>
+                <li style="padding: 5px;">
+                    <div>
+                        <input type="text" placeholder="Search" class="form-control" autocomplete="off" required>
+                    </div>
+                    <ul class="nav dash-nav">
+                        <li class="nav-functions" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" jqyoui-draggable>
+                            <a href="javascript:void(0)">Join</a>
+                        </li>
+                        <li class="nav-functions" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" jqyoui-draggable>
+                            <a href="javascript:void(0)">Merge</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside> -->
+    <!-- Header-->
+    <section class="dashboardContent">
+        <div class="container-fluid">
+            <div class="row drawingArea-data">
+                <rappid></rappid>
+            </div>            
+        </div>
+    </section>
+</div>

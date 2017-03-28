@@ -1,0 +1,57 @@
+<div class="signin-container">
+    <div class="row">
+        <div class="col-md-12">            
+            <div class="view-header">
+                <div class="headeer-icon">
+                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                </div>
+                <div class="header-title">
+                    <h3>Login</h3>
+                    <small>
+                        Please enter your credentials to login.
+                    </small>
+                </div>
+            </div>
+            <div class="cpanel">
+                <div class="panel-body">
+                    <form name="loginFormObj" form-type="nonavigation" novalidate>
+                        <div class="form-group">
+                            <div>
+                                <label class="control-label" for="username">Username</label>
+                                <strong class="glyphicons glyphicons-asterisk font-color-ff font-100">*</strong>
+                            </div>
+                            <div>
+                                <input type="text" class="form-control" placeholder="Please enter you username" name="username" ng-model="loginFormObj.usernameStr" autocomplete="off" required>
+                                <!-- Validations -->
+                                <div ng-messages="loginFormObj.username.$error" ng-show="((loginFormObj.$submitted || !loginFormObj.username.$pristine))">
+                                    <span ng-message="required" class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"> </span> This field is required</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <label class="control-label" for="password">Password</label>
+                                <strong class="glyphicons glyphicons-asterisk font-color-ff font-100">*</strong>
+                                <a ui-sref="resetPwd" class="pull-right">Forget Password</a>
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Please enter your password" name="passwordStr" ng-model="loginFormObj.password" class="form-control" autocomplete="off" required>
+                                <!-- Validations -->
+                                <div ng-messages="loginFormObj.passwordStr.$error" ng-show="((loginFormObj.$submitted || !loginFormObj.passwordStr.$pristine))">
+                                    <span ng-message="required" class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" role="alert"><span class="k-icon k-i-warning"> </span> This field is required</span>
+                                </div>
+                                <div ng-if="isErorMsg">
+                                    <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" role="alert"><span class="k-icon k-i-warning"> </span>Invalid Username/Password.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center pull-left">
+                            <button class="btn btn-dccent" type="submit" ng-click="validateUser(loginFormObj)">Login</button>
+                            <button class="btn btn-dccent" ui-sref="signUp">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,333 @@
+{
+  "actionBarButtons": [
+    {
+      "action": "saveApplication",
+      "label": "Save"
+    },
+    {
+      "action": "loginAction",
+      "label": "Login"
+    }
+  ],
+  "tableHeaders": [
+    {
+      "label": "Id",
+      "field": "id",
+      "fieldType": "number"
+    },
+    {
+      "label": "Name",
+      "field": "customerName",
+      "fieldType": "Text"
+    },
+    {
+      "label": "Salary",
+      "field": "customerSal",
+      "fieldType": "float"
+    },
+    {
+      "label": "Location",
+      "field": "customerLocation",
+      "fieldType": "Text"
+    },
+    {
+      "label": "Group",
+      "field": "isPermenent",
+      "fieldType": "boolean"
+    },
+    {
+      "label": "Group",
+      "field": "joining",
+      "fieldType": "date"
+    },
+    {
+      "label": "Email",
+      "field": "email",
+      "fieldType": "email"
+    }
+  ],
+  "data": [
+    {
+      "id": "206000000000201",
+      "customerName": "VAR01_OP02",
+      "customerSal": "11345.89",
+      "customerLocation": "India",
+      "isPermenent": false,
+      "email": "VAR01_OP02@yahoo.com"
+    },
+    {
+      "id": "206000000000260",
+      "customerName": "op_04",
+      "customerSal": "87345.12",
+      "customerLocation": "US",
+      "isPermenent": true,
+      "email": "op_04@gmail.com"
+    },
+    {
+      "id": "206000000000423",
+      "customerName": "NiharOPDispla",
+      "customerSal": "7890.00",
+      "customerLocation": "UK",
+      "isPermenent": false,
+      "email": "NiharOPDispla@live.com"
+    },
+    {
+      "id": "206000000000440",
+      "customerName": "ope086",
+      "customerSal": "5643.11",
+      "customerLocation": "Canada",
+      "isPermenent": true,
+      "email": "ope086@facebook.com"
+    },
+    {
+      "id": "206000000000493",
+      "customerName": "ope222",
+      "customerSal": "8976.18",
+      "customerLocation": "India",
+      "isPermenent": false,
+      "email": "ope222@yahoo.com"
+    },
+    {
+      "id": "206000000000520",
+      "customerName": "ope_8272",
+      "customerSal": "34234.15",
+      "customerLocation": "US",
+      "isPermenent": false,
+      "email": "ope_8272@gmail.com"
+    },
+    {
+      "id": "206000000000602",
+      "customerName": "ope_fayaka",
+      "customerSal": "12345.11",
+      "customerLocation": "Canada",
+      "isPermenent": true,
+      "email": "ope_fayaka@live.com"
+    },
+    {
+      "id": "206000000000620",
+      "customerName": "opetest_4_july",
+      "customerSal": "99989.09",
+      "customerLocation": "India",
+      "isPermenent": false,
+      "email": "opetest_4_july@facebook.com"
+    },
+    {
+      "id": "206000000000660",
+      "customerName": "NiharOPSite-DN",
+      "customerSal": "56789.34",
+      "customerLocation": "US",
+      "isPermenent": true,
+      "email": "NiharOPSite@cisco.com"
+    },
+    {
+      "id": "206000000000665",
+      "customerName": "var_20_Aug_ope1",
+      "customerSal": "12345.34",
+      "customerLocation": "UK",
+      "isPermenent": false,
+      "email": "var_20_Aug_ope1@yahoo.com"
+    },
+    {
+      "id": "206000000000672",
+      "customerName": "NiharSiteope01-DN",
+      "customerSal": "6567.21",
+      "customerLocation": "Canada",
+      "isPermenent": true,
+      "email": "NiharSiteope01@gmail.com"
+    },
+    {
+      "id": "206000000000673",
+      "customerName": "MonicaOp_20814",
+      "customerSal": "39878.78",
+      "customerLocation": "Inida",
+      "isPermenent": true,
+      "email": "MonicaOp_20814@live.com"
+    },
+    {
+      "id": "206000000000681",
+      "customerName": "OPE-2643-DN",
+      "customerSal": "76854.49",
+      "customerLocation": "US",
+      "isPermenent": false,
+      "email": "OPE-2643-DN@symphony.com"
+    },
+    {
+      "id": "206000000000701",
+      "customerName": "ope_28Aug_1pm",
+      "customerSal": "33665.21",
+      "customerLocation": "UK",
+      "isPermenent": true,
+      "email": "ope_28Aug_1pm@facebook.com"
+    },
+    {
+      "id": "206000000000720",
+      "customerName": "test",
+      "customerSal": "21234.56",
+      "customerLocation": "Canada",
+      "isPermenent": false,
+      "email": "test@gmail.com"
+    },
+    {
+      "id": "206000000000721",
+      "customerName": "ope_2sep",
+      "customerSal": "55644.38",
+      "customerLocation": "Inida",
+      "isPermenent": true,
+      "email": "ope_2sep@yahoo.com"
+    },
+    {
+      "id": "206000000000724",
+      "customerName": "ope_sep3",
+      "customerSal": "78651.74",
+      "customerLocation": "US",
+      "isPermenent": false,
+      "email": "ope_sep3@live.com"
+    },
+    {
+      "id": "206000000000725",
+      "customerName": "ope_sep3_4",
+      "customerSal": "90909.91",
+      "customerLocation": "UK",
+      "isPermenent": true,
+      "email": "ope_sep3_4@facebook.com"
+    },
+    {
+      "id": "206000000000726",
+      "customerName": "ope_sep5_10",
+      "customerSal": "59871.43",
+      "customerLocation": "Canada",
+      "isPermenent": false,
+      "email": "ope_sep5_10@cisco.com"
+    },
+    {
+      "id": "206000000000860",
+      "customerName": "ope_oct29",
+      "customerSal": "84532.43",
+      "customerLocation": "Inida",
+      "isPermenent": false,
+      "email": "ope_oct29@live.com"
+    },
+    {
+      "id": "206000000001040",
+      "customerName": "DASARI",
+      "customerSal": "69872.72",
+      "customerLocation": "UK",
+      "isPermenent": false,
+      "email": "DASARI@gmail.com"
+    }
+  ],
+  "countries": {
+    "US": {
+      "AL": "Alabama",
+      "AK": "Alaska",
+      "AS": "American Samoa",
+      "AZ": "Arizona",
+      "AR": "Arkansas",
+      "CA": "California",
+      "CO": "Colorado",
+      "CT": "Connecticut",
+      "DE": "Delaware",
+      "DC": "District Of Columbia",
+      "FM": "Federated States Of Micronesia",
+      "FL": "Florida",
+      "GA": "Georgia",
+      "GU": "Guam",
+      "HI": "Hawaii",
+      "ID": "Idaho",
+      "IL": "Illinois",
+      "IN": "Indiana",
+      "IA": "Iowa",
+      "KS": "Kansas",
+      "KY": "Kentucky",
+      "LA": "Louisiana",
+      "ME": "Maine",
+      "MH": "Marshall Islands",
+      "MD": "Maryland",
+      "MA": "Massachusetts",
+      "MI": "Michigan",
+      "MN": "Minnesota",
+      "MS": "Mississippi",
+      "MO": "Missouri",
+      "MT": "Montana",
+      "NE": "Nebraska",
+      "NV": "Nevada",
+      "NH": "New Hampshire",
+      "NJ": "New Jersey",
+      "NM": "New Mexico",
+      "NY": "New York",
+      "NC": "North Carolina",
+      "ND": "North Dakota",
+      "MP": "Northern Mariana Islands",
+      "OH": "Ohio",
+      "OK": "Oklahoma",
+      "OR": "Oregon",
+      "PW": "Palau",
+      "PA": "Pennsylvania",
+      "PR": "Puerto Rico",
+      "RI": "Rhode Island",
+      "SC": "South Carolina",
+      "SD": "South Dakota",
+      "TN": "Tennessee",
+      "TX": "Texas",
+      "UT": "Utah",
+      "VT": "Vermont",
+      "VI": "Virgin Islands",
+      "VA": "Virginia",
+      "WA": "Washington",
+      "WV": "West Virginia",
+      "WI": "Wisconsin",
+      "WY": "Wyoming"
+    },
+    "INDIA": {
+      "AP": "Andhra Pradesh",
+      "AR": "Arunachal Pradesh",
+      "AS": "Assam",
+      "BR": "Bihar",
+      "CG": "Chhattisgarh",
+      "Chandigarh": "Chandigarh",
+      "DN": "Dadra and Nagar Haveli",
+      "DD": "Daman and Diu",
+      "DL": "Delhi",
+      "GA": "Goa",
+      "GJ": "Gujarat",
+      "HR": "Haryana",
+      "HP": "Himachal Pradesh",
+      "JK": "Jammu and Kashmir",
+      "JH": "Jharkhand",
+      "KA": "Karnataka",
+      "KL": "Kerala",
+      "MP": "Madhya Pradesh",
+      "MH": "Maharashtra",
+      "MN": "Manipur",
+      "ML": "Meghalaya",
+      "MZ": "Mizoram",
+      "NL": "Nagaland",
+      "OR": "Orissa",
+      "PB": "Punjab",
+      "PY": "Pondicherry",
+      "RJ": "Rajasthan",
+      "SK": "Sikkim",
+      "TN": "Tamil Nadu",
+      "TR": "Tripura",
+      "UP": "Uttar Pradesh",
+      "UK": "Uttarakhand",
+      "WB": "West Bengal"
+    },
+    "Canada": {
+      "TT": "Toronto",
+      "ML": "Montreal",
+      "VR": "Vancouver",
+      "LE": "Lachine",
+      "MA": "Mississauga"
+    },
+    "UK": {
+      "PE": "Pershore",
+      "RR": "Rowley Regis",
+      "SR": "Stroud",
+      "BM": "Birmingham",
+      "WE": "Worcester",
+      "AS": "Alcester",
+      "GC": "Gloucester"
+    }
+  }
+}

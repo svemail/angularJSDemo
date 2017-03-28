@@ -1,0 +1,32 @@
+[
+  {
+    "Customer_ID": 593256,
+    "Store Number": 67,
+    "Customer Segment": "Male Over 50",
+    "First Name": "James",
+    "Last Name": "Albert",
+    "Address": "12 Sivnage Street",
+    "County": "London",
+    "Postcode": "EC1 1ZA"
+  },
+  {
+    "Customer_ID": 394893,
+    "Store Number": 34,
+    "Customer Segment": "Female Under 25",
+    "First Name": "Rebecca",
+    "Last Name": "Johnson",
+    "Address": "Flat 4, 88 Vintage Avenue",
+    "County": "Surrey",
+    "Postcode": "GU1 1HS"
+  },
+  {
+    "Customer_ID": 78829,
+    "Store Number": "",
+    "Customer Segment": "",
+    "First Name": "H",
+    "Last Name": "Cayle",
+    "Address": "90 Jigsaw Street",
+    "County": "London",
+    "Postcode": "SW1 H77"
+  }
+]

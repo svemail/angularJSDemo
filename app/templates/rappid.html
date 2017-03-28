@@ -1,0 +1,99 @@
+<div class="rappid">
+    <div class="toolbar-container">
+        <button id="btn-undo" class="btn btn-info" data-tooltip="Undo" data-tooltip-position="top" ng-click="components.commander.undo()">
+            <i class="fa fa-rotate-left fa-lg"></i>
+        </button>
+        <button id="btn-redo" class="btn btn-info" data-tooltip="Redo" data-tooltip-position="top" ng-click="components.commander.redo()">
+            <i class="fa fa-rotate-right fa-lg"></i>
+        </button>
+        <button id="btn-clear" class="btn btn-info" data-tooltip="Clear Paper" data-tooltip-position="top" ng-click="components.graph.clear()">
+            <i class="fa fa-trash fa-lg"></i>
+        </button>
+        <button id="btn-svg" class="btn btn-info" data-tooltip="Open as SVG in a New Window" data-tooltip-position="top" ng-click="components.paper.openAsSVG({ preserveDimensions: true })">
+            <i class="fa fa-image fa-lg"></i>
+        </button>
+        <button id="btn-zoom-in" class="btn btn-info" data-tooltip="Zoom In" data-tooltip-position="top" ng-click="components.scroller.zoom(.2, { max: 2 })">
+            <i class="fa fa-search-plus fa-lg"></i>
+        </button>
+        <button id="btn-zoom-out" class="btn btn-info" data-tooltip="Zoom Out" data-tooltip-position="top" ng-click="components.scroller.zoom(-.2, { min: .2 })">
+            <i class="fa fa-search-minus fa-lg"></i>
+        </button>
+        <button id="btn-scale-to-fit" class="btn btn-info" data-tooltip="Zoom To Fit" data-tooltip-position="top" ng-click="components.scroller.zoomToFit({ padding: 20, scaleGrid: .2, minScale: .2, maxScale: 2 })">
+            <i class="fa fa-eye fa-lg"></i>
+        </button>
+    </div>
+    <!-- Files / Functions -->
+    <div class="stencil-container">
+        <label>Stencil</label>
+        <button class="btn-expand" title="Expand all" ng-click="components.stencil.openGroups()">
+            <i class="fa fa-plus-circle"></i>
+        </button>
+        <button class="btn-collapse" title="Collapse all" ng-click="components.stencil.closeGroups()">
+            <i class="fa fa-minus-circle"></i>
+        </button>
+    </div>
+    <!-- End of Files / Functions -->
+    <!-- Drawing area -->
+    <div class="paper-container"></div>
+    <!-- Ending Drawing area -->
+    <!-- ItemData Properties area -->
+    <div class="inspector-container"></div>
+    <!-- End of ItemData Properties area -->
+    <div class="statusbar-container" ng-if="isCollapsePanel">
+        <div class="col-md-12 row">
+            <div class="cpanel">
+                <div class="cpanel-heading">
+                    <div class="cpanel-tools">
+                        <a class="cpanel-toggle" ng-click="showHidePanel($event)"><i class="fa fa-chevron-up"></i></a>
+                        <a class="cpanel-close"><i class="fa fa-times" ng-click="removePanel($event)"></i></a>
+                    </div>
+                </div>
+                <div class="cpanel-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                    <th>Street Address</th>
+                                    <th>City</th>
+                                    <th>Country</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Abraham</td>
+                                    <td>076 9477 4896</td>
+                                    <td>294-318 Duis Ave</td>
+                                    <td>Vosselaar</td>
+                                    <td>Belgium</td>
+                                </tr>
+                                <tr>
+                                    <td>Phelan</td>
+                                    <td>0500 034548</td>
+                                    <td>680-1097 Mi Rd.</td>
+                                    <td>Lavoir</td>
+                                    <td>Pakistan</td>
+                                </tr>
+                                <tr>
+                                    <td>Raya</td>
+                                    <td>(01315) 27698</td>
+                                    <td>Ap #289-8161 In Avenue</td>
+                                    <td>Santomenna</td>
+                                    <td>Burkina Faso</td>
+                                </tr>
+                                <tr>
+                                    <td>Azalia</td>
+                                    <td>0500 854198</td>
+                                    <td>226-4861 Augue. St.</td>
+                                    <td>Newtown</td>
+                                    <td>Christmas Island</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

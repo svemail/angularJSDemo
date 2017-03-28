@@ -1,0 +1,114 @@
+<div class="signup-container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="view-header">
+                <div class="headeer-icon">
+                    <i class="fa fa-unlock" aria-hidden="true"></i>
+                </div>
+                <div class="header-title">
+                    <h3>Register</h3>
+                    <small>
+                        Please enter your data to register.
+                    </small>
+                </div>
+            </div>
+            <div class="cpanel">
+                <div class="panel-body">
+                    <form name="registationForm" form-type="nonavigation" novalidate>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <label>First Name</label>
+                                <strong class="glyphicons glyphicons-asterisk font-color-ff font-100">*</strong>
+                                <input type="text" autocomplete="off" class="form-control" name="username" ng-minlength="3" ng-maxlength="50" ng-model="registationForm.usernameStr" placeholder="Enter your first name" required>
+                                <!-- Validations -->
+                                <div ng-messages="registationForm.username.$error" ng-show="((registationForm.$submitted || !registationForm.username.$pristine))">
+                                    <div ng-message="required">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span> This field is required</span>
+                                    </div>
+                                    <div ng-message="minlength">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span>Your field is too short</span>
+                                    </div>
+                                    <div ng-message="maxlength">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span>Your field is too long</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <label>Last Name</label>
+                                <strong class="glyphicons glyphicons-asterisk font-color-ff font-100">*</strong>
+                                <input type="text" autocomplete="off" class="form-control" name="lastname" ng-minlength="3" ng-maxlength="50" ng-model="registationForm.LastNameStr" placeholder="Enter your last name" required>
+                                <!-- Validations -->
+                                <div ng-messages="registationForm.lastname.$error" ng-show="((registationForm.$submitted || !registationForm.lastname.$pristine))">
+                                    <div ng-message="required">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span> This field is required</span>
+                                    </div>
+                                    <div ng-message="minlength">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span>Your field is too short</span>
+                                    </div>
+                                    <div ng-message="maxlength">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span>Your field is too long</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <label>Password</label>
+                                <strong class="glyphicons glyphicons-asterisk font-color-ff font-100">*</strong>
+                                <input type="password" autocomplete="off" class="form-control" name="password" ng-minlength="5" ng-maxlength="50" ng-model="registationForm.passwordStr" placeholder="Enter a Password" ng-keyup="validateRePassword(registationForm)" required>
+                                <!-- Validations -->
+                                <div ng-messages="registationForm.password.$error" ng-show="((registationForm.$submitted || !registationForm.password.$pristine))">
+                                    <div ng-message="required">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span> This field is required</span>
+                                    </div>
+                                    <div ng-message="minlength">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span>Your field is too short</span>
+                                    </div>
+                                    <div ng-message="maxlength">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span>Your field is too long</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <label>Repeat Password</label>
+                                <strong class="glyphicons glyphicons-asterisk font-color-ff font-100">*</strong>
+                                <input type="password" autocomplete="off" class="form-control" name="repassword" ng-minlength="5" ng-maxlength="50" ng-model="registationForm.repasswordStr" placeholder="Retype Password" ng-keyup="validateRePassword(registationForm)" required>
+                                <!-- Validations -->
+                                <div ng-messages="registationForm.repassword.$error" ng-show="((registationForm.$submitted || !registationForm.repassword.$pristine))">
+                                    <div ng-message="required">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span> This field is required</span>
+                                    </div>
+                                    <div ng-message="minlength">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span>Your field is too short</span>
+                                    </div>
+                                    <div ng-message="maxlength">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span>Your field is too long</span>
+                                    </div>
+                                </div>
+                                <div ng-show="!isMatchPassword && !registationForm.repassword == ''">
+                                    <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span>Passwords do not match</span>
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <label>Email Address</label>
+                                <strong class="glyphicons glyphicons-asterisk font-color-ff font-100">*</strong>
+                                <input type="" autocomplete="off" class="form-control" name="emailStr" placeholder="Enter a Email" ng-pattern="/^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/" ng-model="registationForm.email" required>
+                                <!-- Validations -->
+                                <div ng-messages="registationForm.emailStr.$error" ng-show="((registationForm.$submitted || !registationForm.emailStr.$pristine))">
+                                    <div ng-message="required">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span> This field is required</span>
+                                    </div>
+                                    <div ng-message="pattern">
+                                        <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" data-for="Email" role="alert"><span class="k-icon k-i-warning"></span>Invalid email format</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center pull-left">
+                            <button class="btn btn-dccent" type="submit" ng-click="createNewUser(registationForm)">Register</button>
+                            <button class="btn btn-dccent" ui-sref="signIn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
