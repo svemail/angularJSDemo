@@ -1,2 +1,8 @@
 git status - status of changes done in local
 git pull - get a copy of all server files
+git add <file> - add file to local workspace
+git clone - the entire workspace
+git config -l
+git commit -m "<comment>"
+git push - push code to server
+
